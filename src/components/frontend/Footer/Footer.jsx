@@ -70,7 +70,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4 ">
         {footerData.map((section, idx) => (
           <div key={idx}>
-            <h1 className="font-semibold text-xl mb-3 text-pink-700">
+            <h1 className="font-semibold text-xl mb-3 text-yellow-400">
               {section.heading}
             </h1>
             {section.content.map((item, i) =>
@@ -84,7 +84,7 @@ const Footer = () => {
                     <li key={j}>
                       <Link
                         to={li.to}
-                        className="hover:text-pink-700 transition-colors duration-200"
+                        className="hover:text-emerald-400 transition-colors duration-200"
                       >
                         {li.name}
                       </Link>

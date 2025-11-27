@@ -86,7 +86,7 @@ function TestimonialCards() {
               {/* Stars */}
               <div className="flex mb-3">
                 {[...Array(testimonial.rating)].map((_, idx) => (
-                  <span key={idx} className="text-yellow-400 text-xl">
+                  <span key={idx} className="text-emerald-400 text-xl">
                     &#9733;
                   </span>
                 ))}

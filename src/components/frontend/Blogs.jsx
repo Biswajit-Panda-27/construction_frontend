@@ -16,12 +16,11 @@ const Blogs = () => {
           />
           {/* Overlay text */}
           <div className="absolute inset-0 flex flex-col items-start justify-center top-[11px] left-10 ">
-            <span className="text-zinc-50 font-medium  max-w-xl text-center drop-shadow-md">
-              Qulality, Integrity, Value
-            </span>
-            <h1 className="font-bold text-4xl text-amber-200 drop-shadow-md mb-4">
-              Our Blogs
-            </h1>
+            <div className="mb-4">
+              <h1 className="text-3xl md:text-4xl font-bold border-l-4 border-yellow-400 text-emerald-400 pl-3 inline-block">
+                Our Blogs
+              </h1>
+            </div>
             <span className="text-zinc-50 font-medium text-lg max-w-xl text-start drop-shadow-md">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint modi
               molestiae
@@ -29,13 +28,15 @@ const Blogs = () => {
           </div>
         </div>
       </div>
-      
+
       {/* blogs and news section */}
       <div>
         <div className="flex flex-col justify-center items-center mt-16 mb-10">
-          <h1 className="font-extrabold text-xl text-pink-700 tracking-wide mb-2">
-            BLOGS & NEWS
-          </h1>
+         <div className="mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold border-l-4 border-yellow-400 text-emerald-400 pl-3 inline-block">
+              Blogs and News
+            </h1>
+          </div>
           <span className="text-zinc-600 font-semibold text-2xl mb-2">
             Articles and blog posts
           </span>
@@ -97,7 +98,7 @@ const Blogs = () => {
                 <h5 className="font-semibold tracking-tight text-xs text-gray-800 mb-4">
                   {item.description}
                 </h5>
-                <button className="bg-pink-700 rounded-md hover:bg-slate-900 transition-colors px-6 py-2 text-white font-semibold">
+                <button className="bg-purple-600 rounded-md transition-colors px-6 py-2 text-white font-semibold">
                   Read More
                 </button>
               </div>

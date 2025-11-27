@@ -16,12 +16,11 @@ const ContactUs = () => {
           />
           {/* Overlay text */}
           <div className="absolute inset-0 flex flex-col items-start justify-center top-[11px] left-10 ">
-            <span className="text-zinc-50 font-medium  max-w-xl text-center drop-shadow-md">
-              Qulality, Integrity, Value
-            </span>
-            <h1 className="font-bold text-4xl text-amber-200 drop-shadow-md mb-4">
-              Contact Us
-            </h1>
+            <div className="mb-4">
+              <h1 className="text-3xl md:text-4xl font-bold border-l-4 border-yellow-400 text-emerald-400 pl-3 inline-block">
+                Contact Us
+              </h1>
+            </div>
             <span className="text-zinc-50 font-medium text-lg max-w-xl text-start drop-shadow-md">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint modi
               molestiae
@@ -33,16 +32,18 @@ const ContactUs = () => {
       {/* contact section */}
       <div>
         <div className="flex flex-col justify-center items-center mt-16 mb-10 ">
-          <h1 className="font-extrabold text-xl text-pink-700 tracking-wide mb-2">
-            Contact Us
-          </h1>
+          <div className="mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold border-l-4 border-yellow-400 text-emerald-400 pl-3 inline-block">
+              Contact Us
+            </h1>
+          </div>
           <span className="text-zinc-400 font-mono max-w-2xl text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
             eaque.
           </span>
         </div>
         {/* Form section */}
-        <div className="py-10 px-2 bg-linear-to-br from-slate-900 to-pink-900">
+        <div className="py-10 px-2 bg-pink-900">
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Left contact info panel */}
             <div className="bg-white/60 p-6 shadow-2xl rounded-2xl flex flex-col justify-center">
@@ -167,7 +168,7 @@ const ContactUs = () => {
                 <div className="flex justify-end">
                   <button
                     type="submit"
-                    className="bg-purple-600 rounded hover:bg-pink-700 px-8 py-2 text-white font-semibold shadow transition-colors"
+                    className="bg-purple-600 rounded hover:bg-purple-700 px-8 py-2 text-white font-semibold shadow transition-colors"
                   >
                     Contact Us
                   </button>

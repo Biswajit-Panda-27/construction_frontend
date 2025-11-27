@@ -5,27 +5,32 @@ const Service = () => {
   return (
     <>
       {/* banner section */}
-      <div className="flex justify-center items-center">
-        {/* Relative container for image and overlay */}
-        <div className="relative ">
+      <div className="flex justify-center items-center w-full">
+        <div className="relative w-full">
           {/* Image */}
           <img
             src={heroImage}
             alt="hero"
-            className="h-[400px] w-screen object-cover drop-shadow drop-shadow-amber-500  "
+            className="h-[260px] sm:h-[320px] md:h-[400px] w-full object-cover drop-shadow drop-shadow-amber-500"
           />
+
           {/* Overlay text */}
-          <div className="absolute inset-0 flex flex-col items-start justify-center top-[11px] left-10 ">
-            <span className="text-zinc-50 font-medium  max-w-xl text-center drop-shadow-md">
-              Qulality, Integrity, Value
-            </span>
-            <h1 className="font-bold text-4xl text-amber-200 drop-shadow-md mb-4">
+          <div
+            className="
+        absolute inset-0 
+        flex flex-col justify-center
+        px-4 sm:px-8 md:px-12
+        space-y-3
+      "
+          >
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold border-l-4 border-yellow-400 text-emerald-400 pl-3 inline-block">
               Our Services
             </h1>
-            <span className="text-zinc-50 font-medium text-lg max-w-xl text-start drop-shadow-md">
+
+            <span className="text-zinc-50 font-medium text-sm sm:text-base md:text-lg max-w-xl drop-shadow-md">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint modi
               molestiae, quibusdam aliquam ipsa exercitationem totam praesentium
-              magnam ad inventore
+              magnam ad inventore.
             </span>
           </div>
         </div>
@@ -33,9 +38,11 @@ const Service = () => {
 
       {/* services section */}
       <div className="flex flex-col justify-center items-center mt-16 mb-10 px-4">
-        <h1 className="font-extrabold text-xl text-pink-700 mb-2 tracking-wide">
-          OUR SERVICES
-        </h1>
+        <div className="mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold border-l-4 border-yellow-400 text-emerald-400 pl-3 inline-block">
+            Our Services
+          </h1>
+        </div>
         <span className="text-zinc-600 font-semibold text-2xl mb-2">
           Our Construction Services
         </span>
@@ -127,7 +134,7 @@ const Service = () => {
                   {data.moreDetailsHeading}
                 </h1>
                 <p className="text-sm mb-3">{data.moreDetails}</p>
-                <button className="bg-pink-600 hover:bg-pink-700 rounded px-4 py-2 text-xs font-bold text-white shadow">
+                <button className="bg-purple-600 rounded px-4 py-2 text-xs font-bold text-white shadow">
                   More Details
                 </button>
               </div>
