@@ -43,7 +43,7 @@ const ContactUs = () => {
           </span>
         </div>
         {/* Form section */}
-        <div className="py-10 px-2 bg-pink-900">
+        <div className="py-10 px-2 bg-purple-400">
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Left contact info panel */}
             <div className="bg-white/60 p-6 shadow-2xl rounded-2xl flex flex-col justify-center">
